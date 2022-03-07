@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Add</title>
+    <link rel="stylesheet" href="signup.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="signup-box">
+      <h1>Enter the details below</h1>
+      <form th:action="@{/saveCenter}">
+        <label>CenterID</label>
+        <input type="text" placeholder="" />
+        <label>Name</label>
+        <input type="text" placeholder="" />
+        <label>ContactNo</label>
+        <input type="text" placeholder="" />
+        <label>Address</label>
+        <input type="text" placeholder="" />
+        <label>Email</label>
+        <input type="text" placeholder="" />
+        <label>ServiceList</label>
+        <input type="text" placeholder="" />
+        <input type="button" value="ADD_Center" />
+        <a th:href="@{/center}" class="btn btn-default">Update-CENTER</a>
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html  xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <title>Admin Login</title>
+    <link rel="stylesheet" href="signup.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="login-box">
+      <h1>Admin Login</h1>
+      <form>
+        <label>Email</label>
+        <input type="email" placeholder="" />
+        <label>Password</label>
+        <input type="password" placeholder="" />
+          
+         <a th:href="@{/adminpanel}"><input type="button" value="Submit" /></a>
+      </form>
+    </div>
+    <p class="para-3">
+      Back to user login! <a th:href="@{login}">Login here</a>
+    </p>
+  </body>
+</html>
+

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>V DiagnosticCentre</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="signup.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
+  </head>
+  <style>
+  body{
+    background-image:"bg_3.jpg";
+  }
+  table ,th, td{
+        border:2px solid black;
+  }
+  </style>
+</head>
+<body>
+<h1 style="text-align:center;text-shadow:2px 2px 8px #FF0080;">PATIENT_LIST</h1>
+<div class="col-md-1"></div>
+<div class="col-md-1">
+<table border="1" class="table table-striped table-responsive-md" style="margin-top:40px;">
+<tr class="info">
+<th>PatientID</th>
+<th>First_Name</th>
+<th>Last_Name</th>
+<th>Age</th>
+<th>Gender</th>
+<th>PhoneNumber</th>
+<th>Email</th>
+<th>Update</th>
+<th>Delete </th>
+</tr>
+
+<tr th:each="variable:${key1}">
+<td th:utext="${variable.patientId}"></td>
+<td th:utext="${variable.firstName}"></td>
+<td th:utext="${variable.lastName}"></td>
+<td th:utext="${variable.age}"></td>
+<td th:utext="${variable.gender}"></td>
+<td th:utext="${variable.phoneNumber}"></td>
+<td th:utext="${variable.email}"></td>
+<!--<td th:utext="${variable.appointmentid}"></td>-->
+
+<td><a th:href="@{/update}" class="btn btn-default">UPDATE</a></td>
+<td><a href="" class="btn btn-danger">DELETE</a></td>
+
+</tr>
+</table>
+</div>
+<td><a th:href="@{/regPatient}" class="btn btn-success">ADD</a></td>
+
+</body>
+<td><a th:href="@{/home}" class="btn btn-primary">HOME</a></td>
+</html>

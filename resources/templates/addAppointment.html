@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <title>Add</title>
+    <link rel="stylesheet" href="signup.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="signup-box">
+      <h1>Enter the details below</h1>
+     <form class="form-group" th:action="@{/saveCenter}" method="post">
+        <label>AppointmentID</label>
+        <input type="text" placeholder="" />
+        <label>Date</label>
+        <input type="text" placeholder="" />
+        <label>Time</label>
+        <input type="text" placeholder="" />
+        <label>Status</label>
+        <input type="text" placeholder="" />
+        
+        <input type="button" value="ADD_Center" />
+        <a th:href="@{/appointmentlist}" class="btn btn-default">ADD-APPOINTMENT</a>
+      </form>
+    </div>
+  </body>
+</html>

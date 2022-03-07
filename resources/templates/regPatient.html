@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>V DiagnosticCentre</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+      
+    />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+ 
+</head>
+<body>
+	<div class="container">
+	 <div class="image">
+        <img src="bg3.jpg" alt="">
+    </div>
+	
+		<h1>Patient Management System</h1>
+		<hr>
+		<h2>Register_Patient</h2>
+
+		 <form action="#" th:action="@{/app}" th:object="${key2}"
+			method="post">
+				
+		  	<input type="text" th:field="*{patientId}"
+				placeholder="Patient-Id" class="form-control mb-4 col-4">
+				
+				<input type="text" th:field="*{firstName}"
+				placeholder="Patient First_Name" class="form-control mb-4 col-4">
+				
+				<input type="text" th:field="*{lastName}"
+				placeholder="Patient Last_Name" class="form-control mb-4 col-4">
+				
+				<input type="id" th:field="*{age}"
+				placeholder="Patient Age" class="form-control mb-4 col-4">
+				
+				<input type="text" th:field="*{gender}"
+				placeholder="Patient_Gender" class="form-control mb-4 col-4">
+				
+				<input type="id" th:field="*{phoneNumber}"
+				placeholder="Patient_phoneNumber" class="form-control mb-4 col-4">
+				
+				<input type="text" th:field="*{email}"
+				placeholder="Patient Email" class="form-control mb-4 col-4">
+				
+				<!--  <button type="submit" class="btn btn-info col-2"> Save Employee</button>-->
+				<a th:href="@{/viewPatient}" class="btn btn-info col-2">SavePatient</a>
+				
+				 
+    
+		</form>
+		
+		<hr>
+		
+		<a th:href ="@{/viewPatient}" class="btn btn-info default"> Back to Employee List</a>
+	</div>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="adminpanel.css">
+    <title>Diagnostic Center</title>
+</head>
+
+<body>
+    <div class="side-menu">
+ <ul>
+            <li><img src="dashboard (2).png" alt="">&nbsp; <span><a th:href="@{/adminpanel}">Dashboard</a></span> </li>
+           <li><img src="reading-book (1).png" alt="">&nbsp;<span><a th:href="@{/patientlist}">Patient List</a></span> </li>
+            <li><img src="reading-book (1).png" alt="">&nbsp;<span><a th:href="@{appointmentlist}">Appointment List</a></span> </li>
+            <li><img src="reading-book (1).png" alt="">&nbsp;<span><a th:href="@{/center}">Diagnostic Centre</a></span> </li>
+            <li><img src="teacher2.png" alt="">&nbsp;<span><a th:href="@{/diagTest}"> Diagnostic Test</a></span> </li>
+            <li><img src="reading-book (1).png" alt="">&nbsp;<span><a th:href="@{/testResult}">Test Results</a></span> </li>
+            <li><img src="school.png" alt="">&nbsp;<span><a th:href="@{/approvallist}">Approval</a></span> </li>
+            <li><img src="school.png" alt="">&nbsp;<span><a th:href="@{/index}">Logout</a></span> </li>
+        </ul>
+       
+    </div>
+    <div class="container">
+        <div class="header">
+            <div class="nav">
+                <div class="user">
+                    <p style="font-size: xx-large; font-style: italic; color:#16a085; text-align: center;">V Diagnostic Centre</p>
+                    <div class="img-case">
+                        <img src="user.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="content-2">
+                <div class="recent-payments">
+                    <div class="title">
+                        <h2>Appoinment Approval</h2>
+                    </div>
+                    <table>
+                        <tr>
+                            <th>Patient Id</th>
+                            <th>Appoinment Id</th>
+                            <th>Patient Name</th>
+                            <th>Approve</th>
+                            <th>Reject</th>
+                        </tr>
+                       
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

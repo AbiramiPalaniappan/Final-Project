@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Add</title>
+    <link rel="stylesheet" href="signup.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="signup-box">
+      <h1>Enter the details below</h1>
+      <form>
+        <label>TestId</label>
+        <input type="text" placeholder="" />
+        <label>Test Name</label>
+        <input type="text" placeholder="" />
+        <label>Test Price</label>
+        <input type="text" placeholder="" />
+       
+        <label>Units</label>
+        <input type="text" placeholder="" />
+        <input type="button" value="Add" />
+        <a th:href="@{/diagTest}" class="btn btn-default">ADD-Test</a>
+      </form>
+    </div>
+  </body>
+</html>
